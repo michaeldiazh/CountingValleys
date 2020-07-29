@@ -49,11 +49,12 @@ public class CountingValleys{
         while ((str = br.readLine()) != null) {
             storage.add(str);
         }
-
-        // storger.get(0) -> size of array; storage.get(1) -> the array
+        
+        // storage.get(0) -> size of array; storage.get(1) -> the array
         int n = Integer.parseInt(storage.get(0));
         char[] s = storage.get(1).toCharArray();
         System.out.println(countingValleys(n, s));
+        br.close();
         
 
 
